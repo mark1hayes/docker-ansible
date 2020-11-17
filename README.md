@@ -3,7 +3,10 @@ Notes to deploy ansible
 https://github.com/willhallonline/docker-ansible
 
 ```bash
+docker run --rm -it -v $(pwd):/ansible -v ~/.ssh/id_rsa:/root/id_rsa willhallonline/ansible:2.10-alpine-3.10 /bin/sh
 docker run --rm -it -v $(pwd):/ansible -v ~/.ssh/id_rsa:/root/id_rsa willhallonline/ansible:2.9-alpine /bin/sh
+docker run --rm -it -v $(pwd):/ansible -v ~/.ssh/id_rsa:/root/id_rsa willhallonline/ansible:2.8-alpine /bin/sh
+docker run --rm -it -v $(pwd):/ansible -v ~/.ssh/id_rsa:/root/id_rsa willhallonline/ansible:2.10-ubuntu-18.04 /bin/sh
 ```
 
 ```bash
