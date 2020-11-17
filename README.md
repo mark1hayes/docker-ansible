@@ -4,7 +4,18 @@ https://github.com/willhallonline/docker-ansible
 
 ```bash
 docker run --rm -it -v $(pwd):/ansible -v ~/.ssh/id_rsa:/root/id_rsa willhallonline/ansible:2.9-alpine /bin/sh
+```
+
+```bash
 docker run --rm -it -v $(pwd):/ansible -v ~/.ssh/id_rsa:/root/id_rsa willhallonline/ansible:latest /bin/sh
+>
+/ansible # ansible --version
+ansible 2.10.1
+  config file = None
+  configured module search path = ['/root/.ansible/plugins/modules', '/usr/share/ansible/plugins/modules']
+  ansible python module location = /usr/lib/python3.8/site-packages/ansible
+  executable location = /usr/bin/ansible
+  python version = 3.8.2 (default, Jul 18 2020, 19:35:03) [GCC 9.2.0]
 ```
 
 ## Running
